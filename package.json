@@ -1,0 +1,29 @@
+{
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets-seo-html.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets-seo-html.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets-seo-html.json"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets-seo-sitemap.json"
+      },
+      {
+        "language": "plaintext",
+        "path": "./snippets-seo-robots.json"
+      }
+    ]
+  }
+}

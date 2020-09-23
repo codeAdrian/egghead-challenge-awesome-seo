@@ -1,0 +1,191 @@
+{
+  "Add SEO tags to HTML head element": {
+    "prefix": "seo:head",
+    "body": [
+      "<link rel=\"canonical\" href=\"$1\" />",
+      "<meta property=\"og:url\" content=\"$1\" />",
+      "<meta property=\"og:title\" content=\"$2\" />",
+      "<meta name=\"twitter:title\" content=\"$2\" />",
+      "<meta name=\"description\" content=\"$3\" />",
+      "<meta name=\"twitter:description\" content=\"$3\" />",
+      "<meta property=\"og:description\" content=\"$3\" />",
+      "<meta name=\"og:image\" content=\"$4\" />",
+      "<meta name=\"image\" property=\"og:image\" content=\"$4\" />",
+      "<meta name=\"twitter:image\" content=\"$4\" />",
+      ""
+    ],
+    "description": "Add basic SEO tags to HTML <head> element"
+  },
+
+  "Add Article schema": {
+    "prefix": "seo:schema:article",
+    "body": [
+      "<script type=\"application/ld+json\">",
+      "{",
+      "\"@context\": \"https://schema.org\",",
+      "\"@type\": \"NewsArticle\",",
+      "\"headline\": \"$1\",",
+      "\"image\": [",
+      "\"$2\",",
+      "],",
+      "\"datePublished\": \"$3\",",
+      "\"dateModified\": \"$4\"",
+      "}",
+      "</script>"
+    ],
+    "description": "Add Article schema"
+  },
+
+  "Add Breadcrumb schema": {
+    "prefix": "seo:schema:breadcrumb",
+    "body": [
+      "<script type=\"application/ld+json\">",
+      "{",
+      "\"@context\": \"https://schema.org\",",
+      "\"@type\": \"BreadcrumbList\",",
+      "\"itemListElement\": [{",
+      "\"@type\": \"$1\",",
+      "\"position\": 1,",
+      "\"name\": \"$2\",",
+      "\"item\": \"$3\"",
+      "}]",
+      "}",
+      "</script>"
+    ],
+    "description": "Add Breadcrumb schema"
+  },
+
+  "Add Course schema": {
+    "prefix": "seo:schema:course",
+    "body": [
+      "<script type=\"application/ld+json\">",
+      "{",
+      "\"@context\": \"https://schema.org\",",
+      "\"@type\": \"Course\",",
+      "\"name\": \"$1\",",
+      "\"description\": \"$2\",",
+      "\"provider\": {",
+      "\"@type\": \"Organization\",",
+      "\"name\": \"$3\",",
+      "\"sameAs\": \"$4\"",
+      "}",
+      "}",
+      "</script>"
+    ],
+    "description": "Add Course schema"
+  },
+
+  "Add Event Schema": {
+    "prefix": "seo:schema:event",
+    "body": [
+      "<script type=\"application/ld+json\">",
+      "{",
+      "\"@context\": \"https://schema.org\",",
+      "\"@type\": \"Event\",",
+      "\"name\": \"$1\",",
+      "\"startDate\": \"$2\",",
+      "\"endDate\": \"$3\",",
+      "\"eventAttendanceMode\": \"https://schema.org/OfflineEventAttendanceMode\",",
+      "\"eventStatus\": \"https://schema.org/EventScheduled\",",
+      "\"location\": {",
+      "\"@type\": \"Place\",",
+      "\"name\": \"$4\",",
+      "\"address\": {",
+      "\"@type\": \"PostalAddress\",",
+      "\"streetAddress\": \"$5\",",
+      "\"addressLocality\": \"$6\",",
+      "\"postalCode\": \"$7\",",
+      "\"addressRegion\": \"$8\",",
+      "\"addressCountry\": \"$9\"",
+      "}",
+      "},",
+      "\"image\": [",
+      "\"https://example.com/photos/1x1/photo.jpg\",",
+      "],",
+      "\"description\": \"The Adventures of Kira and Morrison is coming to Snickertown in a can’t miss performance.\",",
+      "}",
+      "</script>"
+    ],
+    "description": "Add Event Schema"
+  },
+
+  "Add FAQ Schema": {
+    "prefix": "seo:schema:faq",
+    "body": [
+      "<script type=\"application/ld+json\">",
+      "{",
+      "\"@context\": \"https://schema.org\",",
+      "\"@type\": \"FAQPage\",",
+      "\"mainEntity\": [{",
+      "\"@type\": \"Question\",",
+      "\"name\": \"$1\",",
+      "\"acceptedAnswer\": {",
+      "\"@type\": \"Answer\",",
+      "\"text\": \"$2\"",
+      "}",
+      "}]",
+      "}",
+      "</script>"
+    ],
+    "description": "Add FAQ Schema"
+  },
+
+  "Add Product Schema": {
+    "prefix": "seo:schema:product",
+    "body": [
+      "<script type=\"application/ld+json\">",
+      "{",
+      "\"@context\": \"https://schema.org/\",",
+      "\"@type\": \"Product\",",
+      "\"name\": \"$1\",",
+      "\"image\": [",
+      "\"$2\",",
+      "],",
+      "\"description\": \"$3\",",
+      "\"sku\": \"$4\",",
+      "\"aggregateRating\": {",
+      "\"@type\": \"AggregateRating\",",
+      "\"ratingValue\": \"$5\",",
+      "\"reviewCount\": \"$6\"",
+      "},",
+      "\"offers\": {",
+      "\"@type\": \"Offer\",",
+      "\"url\": \"$7\",",
+      "\"priceCurrency\": \"$8\",",
+      "\"price\": \"$9\",",
+      "\"priceValidUntil\": \"$10\",",
+      "\"itemCondition\": \"https://schema.org/NewCondition\",",
+      "\"availability\": \"https://schema.org/InStock\"",
+      "}",
+      "}",
+      "</script>"
+    ],
+    "description": "Add Product Schema"
+  },
+
+  "Add Software Application Schema": {
+    "prefix": "seo:schema:softwareApp",
+    "body": [
+      "<script type=\"application/ld+json\">",
+      "{",
+      "\"@context\": \"https://schema.org\",",
+      "\"@type\": \"SoftwareApplication\",",
+      "\"name\": \"$1\",",
+      "\"operatingSystem\": \"$2\",",
+      "\"applicationCategory\": \"$3\",",
+      "\"aggregateRating\": {",
+      "\"@type\": \"AggregateRating\",",
+      "\"ratingValue\": \"$4\",",
+      "\"ratingCount\": \"$5\"",
+      "},",
+      "\"offers\": {",
+      "\"@type\": \"Offer\",",
+      "\"price\": \"$6\",",
+      "\"priceCurrency\": \"$7\"",
+      "}",
+      "}",
+      "</script>"
+    ],
+    "description": "Add Software Application Schema"
+  }
+}

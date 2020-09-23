@@ -1,0 +1,12 @@
+{
+  "Add basic robots.txt markup": {
+    "prefix": "seo:robots",
+    "body": [
+      "User-agent: *",
+      "Allow: /",
+      "Sitemap: $1/sitemap.xml",
+      "Host: $1"
+    ],
+    "description": "Add basic robots.txt markup"
+  }
+}
