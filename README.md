@@ -1,4 +1,4 @@
-# Awesome SEO snippets
+# :female_detective: Awesome SEO snippets
 
 > “No website can stand without a strong backbone. And that backbone is technical SEO.” — Neil Patel
 
