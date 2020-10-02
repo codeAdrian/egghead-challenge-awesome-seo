@@ -2,13 +2,15 @@
 
 > “No website can stand without a strong backbone. And that backbone is technical SEO.” — Neil Patel
 
-Getting the website SEO right from the start can be a challenge. With these snippets, you can set up a basic SEO markup in just few minutes and fine tune it to perfection afterwards.
+No matter how well-built and performant the website is, it's pointless if no one can find it on the Internet. Having a great SEO is important for success as well as having a good idea, unique design and awesome performance.
+
+Learning all the ropes and rules of SEO and nailing down the social sharing tags can be a chore. With these snippets, you can set up a basic working SEO markup in just few minutes and fine tune it to perfection afterwards.
 
 These snippets are so awesome, they can:
 
-- Add title, description, sharing tags and canonical links to HTML `<head>` tag
-- Add boilerplate `robots.txt` rules
-- Add boilerplate `sitemap.xml` rules
+- Add title, description, sharing tags and canonical link to HTML `<head>` tag
+- Set a boilerplate `robots.txt` rules
+- Set a boilerplate `sitemap.xml` rules
 - Add Google Schema markup
 
 ## :scroll: HEAD tags (HTML & React support)
