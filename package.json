@@ -1,4 +1,8 @@
 {
+  "name": "awesome-seo-snippets",
+  "displayName": "Awesome SEO Snippets",
+  "description": "VSCode snippets that help you get started with essential SEO config fast. Meta tags, robots, sitemap and rich snippets included!",
+  "version": "1.0.0",
   "categories": [
     "Snippets"
   ],
